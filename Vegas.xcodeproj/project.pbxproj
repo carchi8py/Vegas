@@ -78,10 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				272172411B8430AE007D2B74 /* AppDelegate.swift */,
-				272172431B8430AE007D2B74 /* SearchViewController.swift */,
-				272172451B8430AE007D2B74 /* Main.storyboard */,
-				272172481B8430AE007D2B74 /* Images.xcassets */,
-				2721724A1B8430AE007D2B74 /* LaunchScreen.xib */,
+				27D38E941B843F5100E497F6 /* Controller */,
 				2721723F1B8430AE007D2B74 /* Supporting Files */,
 			);
 			path = Vegas;
@@ -90,7 +87,10 @@
 		2721723F1B8430AE007D2B74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				272172451B8430AE007D2B74 /* Main.storyboard */,
+				2721724A1B8430AE007D2B74 /* LaunchScreen.xib */,
 				272172401B8430AE007D2B74 /* Info.plist */,
+				272172481B8430AE007D2B74 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +110,14 @@
 				272172561B8430AE007D2B74 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27D38E941B843F5100E497F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				272172431B8430AE007D2B74 /* SearchViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +419,7 @@
 				2721725D1B8430AE007D2B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2721725E1B8430AE007D2B74 /* Build configuration list for PBXNativeTarget "VegasTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				272172601B8430AE007D2B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
