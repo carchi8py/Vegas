@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlv-Gq-raf">
-                                <rect key="frame" x="16" y="20" width="68" height="21"/>
+                                <rect key="frame" x="16" y="40" width="67.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIq-aB-Lbc">
-                                <rect key="frame" x="133" y="16" width="451" height="30"/>
+                                <rect key="frame" x="132" y="40" width="452" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -32,7 +32,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dhj-sk-0X2">
-                                <rect key="frame" x="133" y="60" width="451" height="30"/>
+                                <rect key="frame" x="133" y="84" width="451" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -40,24 +40,33 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaJ-nf-yHP">
-                                <rect key="frame" x="16" y="60" width="79" height="21"/>
+                                <rect key="frame" x="16" y="79" width="79" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Le-7f-KfK">
+                                <rect key="frame" x="269" y="153" width="62" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VaJ-nf-yHP" firstAttribute="top" secondItem="Dlv-Gq-raf" secondAttribute="bottom" constant="19" id="2iM-qm-kBb"/>
-                            <constraint firstItem="Dlv-Gq-raf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FiX-ia-cv5"/>
+                            <constraint firstItem="7Le-7f-KfK" firstAttribute="top" secondItem="Dhj-sk-0X2" secondAttribute="bottom" constant="39" id="Bji-Oh-Zs9"/>
+                            <constraint firstItem="Dlv-Gq-raf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="FiX-ia-cv5"/>
                             <constraint firstItem="yIq-aB-Lbc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IL7-cH-g4o"/>
                             <constraint firstItem="Dhj-sk-0X2" firstAttribute="leading" secondItem="VaJ-nf-yHP" secondAttribute="trailing" constant="38" id="KBO-1R-aXZ"/>
                             <constraint firstItem="Dhj-sk-0X2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N0f-Zp-ZOm"/>
                             <constraint firstItem="Dlv-Gq-raf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NyH-5Q-NL4"/>
                             <constraint firstItem="yIq-aB-Lbc" firstAttribute="leading" secondItem="Dlv-Gq-raf" secondAttribute="trailing" constant="49" id="OGg-ej-rUH"/>
                             <constraint firstItem="Dhj-sk-0X2" firstAttribute="top" secondItem="yIq-aB-Lbc" secondAttribute="bottom" constant="14" id="YYB-wG-cfU"/>
+                            <constraint firstAttribute="centerX" secondItem="7Le-7f-KfK" secondAttribute="centerX" id="b3B-a1-RE0"/>
                             <constraint firstItem="VaJ-nf-yHP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fdh-Nj-BUv"/>
-                            <constraint firstItem="yIq-aB-Lbc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-4" id="mM5-gd-wPg"/>
+                            <constraint firstItem="yIq-aB-Lbc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mM5-gd-wPg"/>
                             <constraint firstItem="VaJ-nf-yHP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oeI-X5-Ngb"/>
                         </constraints>
                     </view>
