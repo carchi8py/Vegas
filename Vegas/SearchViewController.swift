@@ -60,9 +60,28 @@ class SearchViewController: UIViewController {
             inTextField.text = dateFormatter.stringFromDate(sender.date)
         }
     }
+    
+    //If the search button is pushed activate the Activity Indicator, and then
     @IBAction func searchPressed(sender: AnyObject) {
         self.waitingOnServer.startAnimating()
         self.waitingOnServer.hidden = false
+        search()
+    }
+    
+    func search() {
+        // First step is to check to see if we have Network connection or not
+        if Reachability.isConnectedToNetwork() == true {
+            
+        } else {
+            //If the network is not working we need to lead the user know
+            self.waitingOnServer.stopAnimating()
+            self.displayUIAlert("No Network Connection", msg: "Must be connected to the internet to use this app")
+        }
+    }
+    
+    //Displays an error to the user.
+    func displayUIAlert(title: String, msg: String){
+        UIAlertView(title: title, message: msg, delegate: nil, cancelButtonTitle: "OK").show()
     }
 }
 
