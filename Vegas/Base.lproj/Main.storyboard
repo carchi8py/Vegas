@@ -51,7 +51,13 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aU4-bn-iv1"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-RU-HkO">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -63,6 +69,8 @@
                             <constraint firstItem="Dhj-sk-0X2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N0f-Zp-ZOm"/>
                             <constraint firstItem="Dlv-Gq-raf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NyH-5Q-NL4"/>
                             <constraint firstItem="yIq-aB-Lbc" firstAttribute="leading" secondItem="Dlv-Gq-raf" secondAttribute="trailing" constant="49" id="OGg-ej-rUH"/>
+                            <constraint firstAttribute="centerY" secondItem="4ga-RU-HkO" secondAttribute="centerY" id="Pgl-Vr-BGB"/>
+                            <constraint firstAttribute="centerX" secondItem="4ga-RU-HkO" secondAttribute="centerX" id="RsN-fu-Qep"/>
                             <constraint firstItem="Dhj-sk-0X2" firstAttribute="top" secondItem="yIq-aB-Lbc" secondAttribute="bottom" constant="14" id="YYB-wG-cfU"/>
                             <constraint firstAttribute="centerX" secondItem="7Le-7f-KfK" secondAttribute="centerX" id="b3B-a1-RE0"/>
                             <constraint firstItem="VaJ-nf-yHP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fdh-Nj-BUv"/>
@@ -73,6 +81,7 @@
                     <connections>
                         <outlet property="inTextField" destination="yIq-aB-Lbc" id="y8K-IM-qvv"/>
                         <outlet property="outTextField" destination="Dhj-sk-0X2" id="zhW-Sa-lAc"/>
+                        <outlet property="waitingOnServer" destination="4ga-RU-HkO" id="r3K-aW-jn5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

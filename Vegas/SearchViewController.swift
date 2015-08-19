@@ -13,11 +13,13 @@ class SearchViewController: UIViewController {
     var isOut = false
     @IBOutlet weak var inTextField: UITextField!
     @IBOutlet weak var outTextField: UITextField!
+    @IBOutlet weak var waitingOnServer: UIActivityIndicatorView!
     @IBOutlet weak var dateField: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.waitingOnServer.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +59,10 @@ class SearchViewController: UIViewController {
         } else {
             inTextField.text = dateFormatter.stringFromDate(sender.date)
         }
+    }
+    @IBAction func searchPressed(sender: AnyObject) {
+        self.waitingOnServer.startAnimating()
+        self.waitingOnServer.hidden = false
     }
 }
 
