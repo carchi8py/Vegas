@@ -69,9 +69,18 @@ class SearchViewController: UIViewController {
     }
     
     func search() {
+        println("HI")
         // First step is to check to see if we have Network connection or not
         if Reachability.isConnectedToNetwork() == true {
-            
+            VegasClient.sharedInstance().searchExpeida(inTextField.text, outDate: outTextField.text, completionHandler: { success, error in
+                
+                self.waitingOnServer.stopAnimating()
+                if success {
+                    println("It worked")
+                } else {
+                    println("It Failed")
+                }
+            })
         } else {
             //If the network is not working we need to lead the user know
             self.waitingOnServer.stopAnimating()

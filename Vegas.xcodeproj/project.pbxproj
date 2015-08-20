@@ -14,6 +14,8 @@
 		2721724C1B8430AE007D2B74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2721724A1B8430AE007D2B74 /* LaunchScreen.xib */; };
 		272172581B8430AE007D2B74 /* VegasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272172571B8430AE007D2B74 /* VegasTests.swift */; };
 		27D38E961B8443E600E497F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D38E951B8443E600E497F6 /* Reachability.swift */; };
+		27D38E991B84453200E497F6 /* VegasClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D38E981B84453200E497F6 /* VegasClient.swift */; };
+		27D38E9B1B85948D00E497F6 /* VegasConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D38E9A1B85948D00E497F6 /* VegasConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		272172561B8430AE007D2B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272172571B8430AE007D2B74 /* VegasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegasTests.swift; sourceTree = "<group>"; };
 		27D38E951B8443E600E497F6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		27D38E981B84453200E497F6 /* VegasClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasClient.swift; sourceTree = "<group>"; };
+		27D38E9A1B85948D00E497F6 /* VegasConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			children = (
 				272172411B8430AE007D2B74 /* AppDelegate.swift */,
 				27D38E941B843F5100E497F6 /* Controller */,
+				27D38E971B84451400E497F6 /* Model */,
 				2721723F1B8430AE007D2B74 /* Supporting Files */,
 				27D38E951B8443E600E497F6 /* Reachability.swift */,
 			);
@@ -121,6 +126,15 @@
 				272172431B8430AE007D2B74 /* SearchViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		27D38E971B84451400E497F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27D38E981B84453200E497F6 /* VegasClient.swift */,
+				27D38E9A1B85948D00E497F6 /* VegasConstants.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				272172441B8430AE007D2B74 /* SearchViewController.swift in Sources */,
+				27D38E991B84453200E497F6 /* VegasClient.swift in Sources */,
 				272172421B8430AE007D2B74 /* AppDelegate.swift in Sources */,
+				27D38E9B1B85948D00E497F6 /* VegasConstants.swift in Sources */,
 				27D38E961B8443E600E497F6 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
