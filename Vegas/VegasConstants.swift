@@ -13,6 +13,17 @@ extension VegasClient {
         static let expediaAPIKey: String = "A5Z0OL17JyEDrfnyQVHWl1p9KacBthhj"
         static let expediaSecret : String = "jwjXDa1aX8GB4JJ5"
         
-        static let expediaBaseURL : String =  "http://terminal2.expedia.com/x/hotels"
+        static let expediaBaseURL : String =  "http://terminal2.expedia.com/x/"
+    }
+    
+    struct Methods {
+        static let Hotels = "hotels"
+    }
+    
+    struct JSONKeys {
+        static let Location = "location"
+        static let Radius = "radius"
+        static let Dates = "dates"
+        static let ApiKey = "apikey"
     }
 }
