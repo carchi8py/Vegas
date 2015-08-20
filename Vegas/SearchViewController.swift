@@ -50,8 +50,9 @@ class SearchViewController: UIViewController {
     //Take the date and moved it to the textfield
     func datePickerValueChanged(sender:UIDatePicker) {
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        //dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        //dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         //because we are using the same textfield, we have a bolean vaule that
         //will tell us which field to save the vaule to
         if isOut {
